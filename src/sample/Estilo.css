@@ -1,0 +1,82 @@
+.bgm{
+	-fx-background-image: url(bgm1.png);
+	-fx-background-size:640px 170px;
+}
+
+.bgm2{
+	-fx-background-image: url(bgm2.png);
+	-fx-background-size:640px 170px;
+}
+
+.BG1{
+	-fx-background-image: url(BG1.png);
+	-fx-background-size:1280px 720px;
+}
+
+
+@font-face {
+	font-family: 'Press Start 2P';
+	src: url(PressStart2P-vaV7.ttf);
+}
+
+.btncriar{
+	-fx-background-color:#a67100;
+	-fx-font-size:20px;
+	-fx-text-fill:#FFFFFF;
+	-fx-border-radius:0px;
+	-fx-font-family: 'Press Start 2P';
+}
+
+.btncriar:hover{
+	-fx-background-color:#cb8b00;
+	-fx-font-size:20px;
+	-fx-text-fill:#FFFFFF;
+	-fx-border:none;
+	-fx-font-family: "Press Start 2P";
+}
+
+.btncriar:pressed{
+	-fx-background-color:#a67100;
+	-fx-font-size:20px;
+	-fx-text-fill:#FFFFFF;
+	-fx-border-radius:0px;
+	-fx-font-family: "Press Start 2P";
+}
+
+.textos{
+	-fx-font-family: "Press Start 2P";
+	-fx-font-size:20px;
+}
+
+.textarea{
+	-fx-font-family: "Press Start 2P";
+	-fx-font-size:15px;
+	-fx-text-fill:#FFFFFF;
+	-fx-border:none;
+	-fx-focus-color: transparent;
+	-fx-text-box-border: transparent;
+}
+
+.textarea .content {
+	-fx-background-color: #000000;
+	-fx-focus-color: transparent;
+	-fx-text-box-border: transparent;
+}
+
+.text-area {
+-fx-background-insets: 0;
+-fx-background-color: transparent, black, transparent, black;
+}
+.text-area .content {
+-fx-background-color: transparent, black, transparent, black;
+}
+.text-area:focused .content {
+-fx-background-color: transparent, black, transparent, black;
+}
+.text-area:focused {
+-fx-highlight-fill: black;
+}
+.text-area .content {
+-fx-text-fill: white;
+-fx-highlight-fill: black;
+}

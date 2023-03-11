@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Text?>
+
+<?import javafx.scene.media.MediaView?>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-padding: 0; -fx-background-color: #000000;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Pane layoutX="640.0" maxHeight="170.0" maxWidth="640.0" minHeight="170.0" minWidth="640.0" prefHeight="170.0" prefWidth="640.0" styleClass="bgm2" stylesheets="@Estilo.css">
+         <children>
+            <Text fill="WHITE" layoutX="285.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="textos" text="LOG" />
+            <TextArea fx:id="logSaida" editable="false" layoutX="17.0" layoutY="42.0" prefHeight="115.0" prefWidth="608.0" stylesheets="@Estilo.css" wrapText="true">
+               <styleClass>
+                  <String fx:value="textarea" />
+                  <String fx:value="text-area" />
+               </styleClass></TextArea>
+         </children></Pane>
+      <Pane layoutY="170.0" maxHeight="550.0" maxWidth="1050.0" minHeight="550.0" minWidth="1050.0" prefHeight="550.0" prefWidth="1050.0" style="-fx-background-color: #000000;">
+         <children>
+            <ImageView fitHeight="550.0" fitWidth="1050.0" smooth="false">
+               <image>
+                  <Image url="@Fundo.gif" />
+               </image>
+            </ImageView>
+
+            <ImageView fx:id="CadeirasBar" fitHeight="550.0" fitWidth="1050.0" layoutX="5.0" pickOnBounds="true" preserveRatio="true" smooth="false" />
+            <ImageView fx:id="CadeirasEspera" fitHeight="550.0" fitWidth="1050.0" layoutX="15.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" smooth="false" />
+            <Canvas fx:id="canvas" height="550.0" width="1280.0" />
+            <ImageView fx:id="Cli1" fitHeight="85.0" fitWidth="85.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="Cli2" fitHeight="85.0" fitWidth="85.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="Cli3" fitHeight="85.0" fitWidth="85.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="Cli4" fitHeight="85.0" fitWidth="85.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="Cli5" fitHeight="85.0" fitWidth="85.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="Cli6" fitHeight="85.0" fitWidth="85.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="Cli7" fitHeight="85.0" fitWidth="85.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="Cli8" fitHeight="85.0" fitWidth="85.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="Cli9" fitHeight="85.0" fitWidth="85.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="Cli10" fitHeight="85.0" fitWidth="85.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fitHeight="550.0" fitWidth="1050.0" smooth="false">
+               <image>
+                  <Image url="@Borda.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane maxHeight="170.0" maxWidth="640.0" minHeight="170.0" minWidth="640.0" prefHeight="170.0" prefWidth="640.0" styleClass="bgm" stylesheets="@Estilo.css">
+         <children>
+            <MediaView fx:id="mv" visible="false" />
+            <Text fill="WHITE" layoutX="31.0" layoutY="69.0" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="textos" text="TEMPO EM CASA">
+
+            </Text>
+            <Text fill="WHITE" layoutX="30.0" layoutY="122.0" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="textos" text="TEMPO NO BAR">
+            </Text>
+            <TextField fx:id="tempoCasa" layoutX="310.0" layoutY="37.0" maxHeight="45.0" maxWidth="125.0" minHeight="45.0" minWidth="125.0" prefHeight="45.0" prefWidth="125.0" styleClass="textos" />
+            <TextField fx:id="tempoBar" layoutX="310.0" layoutY="92.0" maxHeight="45.0" maxWidth="110.0" minHeight="45.0" minWidth="125.0" prefHeight="45.0" prefWidth="125.0" styleClass="textos" />
+            <Button layoutX="450.0" layoutY="37.0" maxHeight="100.0" maxWidth="150.0" minHeight="100.0" minWidth="150.0" mnemonicParsing="false" onAction="#criarCliente" prefHeight="100.0" prefWidth="150.0" styleClass="btncriar" stylesheets="@Estilo.css" text="CRIAR" />
+         </children>
+      </Pane>
+   </children>
+</Pane>
